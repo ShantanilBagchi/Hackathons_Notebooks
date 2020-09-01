@@ -23,7 +23,10 @@ The concrete compressive strength is a highly nonlinear function of age and ingr
 <img src = "Images/Data_head.JPG">
 
 ## Data Summary
+#### No Null Values were present
 <img align="centre" src="Images/Data_Summary.JPG" width="700">
+
+
 
 ## Histogram + Skewness Degree
 <img src = "Images/Data_Histogram.JPG">
@@ -101,5 +104,5 @@ Follwing is the result for reference wrt **XGBoost** (not included in the notebo
 |  X_feature_engineered_with_water_cement                 | 4.78  | 91.69  |
 |  X_feature_engineered (without Water, Cement)           | 4.29  |  93.62 |
 
-
+**Further Analysis can be done to improve performance**
 
