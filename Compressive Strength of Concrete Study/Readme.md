@@ -57,7 +57,7 @@ Hence, we can see that none of the independent attributes are a good predictors 
 **Thus, an interaction term has been created i.e. water/cement ratio which has inverse relation with Strength. Moreover, Water and Cement Columns are dropped as their relationship has already been captured in the interaction term**
 
 ## HeatMap
-<img src = "Images/HeatMap.JPG">
+<img src = "Images/HeatMap.JPG" width="650">
 
 ## Models
 
@@ -86,3 +86,20 @@ After 500 epochs batch size 32
 
 ## Conclusion
 Bagging Regressor with base estimator as XGBoostRegressor with hyparameters tuned with GridSearch results in the best performance with accuracy of over 95%. 
+
+***Note-***
+* Outlier detection had been done but resulted in comparatively poor performance.
+* New feature engineering i.e water/binder ratio introduced but didn't result in improved performance.
+* Columns (Fly Ash, Coarse Agg, Fine Agg) were removed to check performance but didn't do well.
+
+Follwing is the result for reference wrt **XGBoost** (not included in the notebook)
+| Detail                                            | RMSE(Whole) | Test Acc |
+| :-------------                                    | :----------:|:--------:|
+|  X_original                                             | 5.04  |  90.78 |
+|  X_without_outliers                                     | 5.06  | 90.37  |
+|  X_with_columns_removed (Fly Ash, Coarse Agg, Fine Agg) | 5.08  |  90.61 |
+|  X_feature_engineered_with_water_cement                 | 4.78  | 91.69  |
+|  X_feature_engineered (without Water, Cement)           | 4.29  |  93.62 |
+
+
+
