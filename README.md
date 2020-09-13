@@ -3,3 +3,4 @@ My Notebooks from participating Hackathons
 
 1) 22-24 Aug DPhi Data Sprint 3
 2) 29-31 Aug DPhi Data Sprint 4
+3) 13-20 Sept DPhi Data Sprint 6
